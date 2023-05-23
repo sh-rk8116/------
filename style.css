@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 table{
-  width: 800px;
-  height: 600px;
-  border-collapse: collapse;
   margin: auto;
+  border-collapse: collapse;
+  width: 600px;
+  height: 200px;
 }
 
 tr,td{
@@ -12,7 +12,18 @@ tr,td{
   border: 1px solid black;
 }
 
+td{
+font-size: 28px;
+}
+
 button{
-  width: 80px;
-  height: 40px;
+  display:block;
+  margin: 0 auto;
+  width: 600px;
+  height: 32px;
+  font-size: 28px;
+}
+li{
+width: fit-content;
+margin: 0 auto;
 }

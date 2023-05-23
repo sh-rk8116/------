@@ -1,9 +1,0 @@
-{
-  "emmet.variables": {
-    "lang": "ja"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.triggerExpansionOnTab": true
-}
