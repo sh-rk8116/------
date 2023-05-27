@@ -38,11 +38,19 @@
   }
 
   {
-    const time = new Date();
-    const year = time.getFullYear();
-    const month = time.getMonth() +1;
-    const day = time.getDate();
-    const week = time.getDay();
-    const youbi = ["日","月","火","水","木","金","土"]
+    let time = new Date();
+    let year = time.getFullYear();
+    let month = time.getMonth() +1;
+    let day = time.getDate();
+    let week = time.getDay();
+    let youbi = ["日","月","火","水","木","金","土"]
     document.getElementById("jikan").textContent=year + "年" + month + "月" + day +"日" + "[" + youbi[week] + "]";
+    
+    document.getElementById("1niti").textContent=month + "/" + day;
+    document.getElementById("2niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +1);
+    document.getElementById("3niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +2);
+    document.getElementById("4niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +3);
+    document.getElementById("5niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +4);
+    document.getElementById("6niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +5);
+    document.getElementById("7niti").textContent=time.getMonth() +1 + "/" + time.setDate(time.getDate() +6);
   }
