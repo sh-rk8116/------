@@ -16,6 +16,7 @@
     document.querySelector("ul").appendChild(li);
   });
 }
+
 {
   const open = document.getElementById("open");
   const back = document.getElementById("back");
@@ -34,4 +35,14 @@
     back.classList.add("s1");
   });
 
+  }
+
+  {
+    const time = new Date();
+    const year = time.getFullYear();
+    const month = time.getMonth() +1;
+    const day = time.getDate();
+    const week = time.getDay();
+    const youbi = ["日","月","火","水","木","金","土"]
+    document.getElementById("jikan").textContent=year + "年" + month + "月" + day +"日" + "[" + youbi[week] + "]";
   }

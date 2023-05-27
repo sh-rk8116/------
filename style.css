@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.A1,.A2{
+  border: 4px solid black;
+
+}
+
 table{
   margin: auto;
   border-collapse: collapse;
@@ -69,4 +74,29 @@ margin: 0 auto;
 
 #modal.s1{
   display: none;
+}
+
+.A2 p{
+  text-align: center;
+}
+
+.A2 table{
+  margin: auto;
+  border-collapse: collapse;
+  width: 1400px;
+}
+
+.A2 .hsyouhinmei{
+  width: 120px;
+  height: 120px;
+}
+
+.A2 tr,td{
+  border: 1px solid black;
+  text-align: center;
+  width: 128px;
+}
+
+.A2 input{
+  width: 64px;
 }
