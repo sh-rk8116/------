@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#jikan{
+  text-align: center;
+}
+
+table{
+  margin: auto;
+  border-collapse: collapse;
+  width: 1400px;
+}
+
+.hsyouhinmei{
+  width: 120px;
+  height: 120px;
+}
+
+tr,td{
+  border: 1px solid black;
+  text-align: center;
+  width: 128px;
+}
+
+input{
+  width: 64px;
+}
