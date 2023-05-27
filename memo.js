@@ -20,3 +20,9 @@ document.querySelector("button").addEventListener("click", () => {
   hours = today.getHours();//時取得
   minutes = today.getMinutes();//分取得
   seconds = today.getSeconds();//秒取得
+  week = today.getDay();//曜日取得
+  //1週間を取得
+  for(let i=0; i<7; i++){
+  document.getElementById("A").textContent = today.getMonth() +1 + "/" + today.getDate(setDate(today.getDate() +1));
+  //"A"に対して月/日
+  }
