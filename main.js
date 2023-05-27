@@ -52,7 +52,7 @@
     for (i = 1; i<=7; i++) {
       // 次の日にセット
       h = time.setDate(time.getDate() + 1);
-      console.log(time);
+      // console.log(time);
 
       // 列に日付を表示
       document.getElementById(i + "niti").textContent = 
