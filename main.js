@@ -70,24 +70,28 @@
 
   }
   {
-    //商品一覧
+  //Itemsの個数分行追加
+  for(let i=0; i>Items.length; i++){ 
+  //商品一覧
   const Items = [
     "item1",
     "item2",
     "item3",
     "item4",
   ];
-  // console.log(Items);
-
   //tableB2を取得
   let B2 = document.getElementById("B2");
-  //Itemsの個数分行追加
-  for(let i=0; i>Items.length; i++){ 
   //trを設定
-  const item =document.criateElement("tr");
-  //tableB2の子要素として追加
-  B2.appendChild(item);
-
+  const tr =document.criateElement("tr");
+  //tdを設定
+  const td =document.criateElement("td");
+  //td内のtext設定
+  td.textContent="Items[i]";
+  //tableB2の子要素としてtr追加
+  B2.appendChild(tr);
+  //trの子要素としてtdを追加
+  tr.appendChild(td);
   };
+
 
   }
