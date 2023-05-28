@@ -1,19 +1,24 @@
 "use strict";
 
 {
-  let today =new Date();
-  let week =[];
-
-  for (let i = 0; i<7; i++){
-    let days = new Date(today);
-    days.setDate(today.getDate() + i);
-    week.push(days);
-  }
-
-  let weekss =document.getElementById("Week");
-  for (let n=0; n<week.lenght; n++){
-    let dayItem =document.createElement("td");
-    dayItem.textContent = week[n].toDateString();
-    weeksItem.appendChild(dayItem);
-  }
+  
+    //商品一覧
+    const Items = [
+     "item1",
+     "item2",
+     "item3",
+     "item4",
+   ];
+ //tableを取得
+ let table = document.createElement("table");
+//tr,td要素を取得
+let tr = document.createElement("tr");
+let td =document.createElement("td");
+//td要素内を設定
+td.innerText=Items[0];
+//trの子要素にtdを追加
+tr.appendChild(td);
+//trをtableに追加
+table.appendChild(tr);
+ 
 }

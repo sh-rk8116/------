@@ -85,11 +85,11 @@
   let itemTr =document.createElement("tr");
   let itemTd =document.createElement("td");
  //td内のtextを設定
-  itemTd.innerText=Items[i];
+ itemTd.innerText=Items[i];
  //trの子要素にtdを追加
-  itemTr.appendChild(itemTd);
- //tdをtbodyに追加
-  tbody.appendChild(itemTr);
+itemTr.appendChild(itemTd); 
+ //trをtbodyに追加
+tbody.appendChild(itemTr);
     }
    
 

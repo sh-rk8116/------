@@ -26,3 +26,4 @@ document.querySelector("button").addEventListener("click", () => {
   document.getElementById("A").textContent = today.getMonth() +1 + "/" + today.getDate(setDate(today.getDate() +1));
   //"A"に対して月/日
   }
+  
