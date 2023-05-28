@@ -76,6 +76,7 @@
       "item2",
       "item3",
       "item4",
+      "item5",
     ];
   //B2を取得
   let tbody = document.getElementById("B2");
@@ -90,7 +91,7 @@
 itemTr.appendChild(itemTd); 
  //trをtbodyに追加
 tbody.appendChild(itemTr);
-    }
+  }
    
 
 
