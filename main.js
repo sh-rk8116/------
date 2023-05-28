@@ -69,6 +69,7 @@
     */
 
   }
+
   {
     //商品一覧
     const Items = [
@@ -78,6 +79,7 @@
       "item4",
       "item5",
     ];
+
   //B2を取得
   let tbody = document.getElementById("B2");
   //Itemsのlength分繰り返す
@@ -85,10 +87,25 @@
  //各種要素を取得
   let itemTr =document.createElement("tr");
   let itemTd =document.createElement("td");
- //td内のtextを設定
+   //td内のtextを設定
  itemTd.innerText=Items[i];
- //trの子要素にtdを追加
-itemTr.appendChild(itemTd); 
+//  trの子要素にtdを追加
+ itemTr.appendChild(itemTd); 
+//inputTrの子要素にinput７個を追加
+for(let n=0;n<7;n++){
+  //inputを入れるtdを設定
+let inputTd=document.createElement("td");
+  //inputを設定
+let input=document.createElement("input");
+input.setAttribute("type","number");
+input.setAttribute("min","0");
+input.setAttribute("step","1")
+input.setAttribute("value","0")
+//作ったinputをinputTdに挿入
+inputTd.appendChild(input);
+//trにinputTdを追加
+itemTr.appendChild(inputTd);
+}
  //trをtbodyに追加
 tbody.appendChild(itemTr);
   }
