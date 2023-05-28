@@ -9,8 +9,8 @@
      "item3",
      "item4",
    ];
- //tableを取得
- let table = document.createElement("table");
+//tableを取得
+let table = document.getElementById("table");
 //tr,td要素を取得
 let tr = document.createElement("tr");
 let td =document.createElement("td");
@@ -20,5 +20,5 @@ td.innerText=Items[0];
 tr.appendChild(td);
 //trをtableに追加
 table.appendChild(tr);
- 
+
 }
