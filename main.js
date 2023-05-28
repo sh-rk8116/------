@@ -69,3 +69,25 @@
     */
 
   }
+  {
+    //商品一覧
+  const Items = [
+    "item1",
+    "item2",
+    "item3",
+    "item4",
+  ];
+  // console.log(Items);
+
+  //tableB2を取得
+  let B2 = document.getElementById("B2");
+  //Itemsの個数分行追加
+  for(let i=0; i>Items.length; i++){ 
+  //trを設定
+  const item =document.criateElement("tr");
+  //tableB2の子要素として追加
+  B2.appendChild(item);
+
+  };
+
+  }
