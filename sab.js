@@ -11,14 +11,21 @@
    ];
 //tableを取得
 let table = document.getElementById("table");
+//Itemsのlenght
+for(let i=0;i<Items.length;i++){
 //tr,td要素を取得
 let tr = document.createElement("tr");
 let td =document.createElement("td");
 //td要素内を設定
-td.innerText=Items[0];
+td.innerText=Items[i];
 //trの子要素にtdを追加
 tr.appendChild(td);
 //trをtableに追加
 table.appendChild(tr);
+}
+
+
+
+
 
 }

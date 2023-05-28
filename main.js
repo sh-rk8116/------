@@ -80,7 +80,7 @@
   //B2を取得
   let tbody = document.getElementById("B2");
   //Itemsのlength分繰り返す
-  for(let i=0; i>=Items.length;i++){
+  for(let i=0; i<Items.length;i++){
  //各種要素を取得
   let itemTr =document.createElement("tr");
   let itemTd =document.createElement("td");
